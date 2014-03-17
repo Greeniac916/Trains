@@ -6,6 +6,7 @@ function download(where, url)
   file:close()
 end
 
-print("Helo DSB how are you... You cant reply through this...")
+print("Helo someone how are you... You cant reply through this...")
 print("OMG IDEA!! Ill add a chat system to it, maybe")
+print("This was a test of Green's downloader system for a system made by Green")
 
