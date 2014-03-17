@@ -6,7 +6,13 @@ function download(where, url)
   file:close()
 end
 
-print("Helo someone how are you... You cant reply through this...")
-print("OMG IDEA!! Ill add a chat system to it, maybe")
-print("This was a test of Green's downloader system for a system made by Green")
+--print("Helo someone how are you... You cant reply through this...")
+--print("OMG IDEA!! Ill add a chat system to it, maybe")
+--print("This was a test of Green's downloader system for a system made by Green")
 
+download(Trains/dests,"https://raw.github.com/Greeniac916/Trains/master/trainList")
+download(Trains/version,"https://raw.github.com/Greeniac916/Trains/master/version")
+download(Trains/updateChecker, "https://raw.github.com/Greeniac916/Trains/master/updateChecker")
+download(startup, "")
+download(Trains/main, "")
+os.reboot()
