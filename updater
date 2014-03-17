@@ -6,3 +6,5 @@ function download(where, url)
   file:close()
 end
 
+print("Hello World!")
+
