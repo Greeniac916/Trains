@@ -10,9 +10,9 @@ end
 --print("OMG IDEA!! Ill add a chat system to it, maybe")
 --print("This was a test of Green's downloader system for a system made by Green")
 
-download(Trains/dests,"https://raw.github.com/Greeniac916/Trains/master/trainList")
-download(Trains/version,"https://raw.github.com/Greeniac916/Trains/master/version")
-download(Trains/updateChecker, "https://raw.github.com/Greeniac916/Trains/master/updateChecker")
-download(startup, "https://raw.github.com/Greeniac916/Trains/master/startup")
+download("Trains/dests","https://raw.github.com/Greeniac916/Trains/master/trainList")
+download("Trains/version","https://raw.github.com/Greeniac916/Trains/master/version")
+download("Trains/updateChecker", "https://raw.github.com/Greeniac916/Trains/master/updateChecker")
+download("startup", "https://raw.github.com/Greeniac916/Trains/master/startup")
 --download(Trains/main, "")
 os.reboot()
