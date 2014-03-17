@@ -1,0 +1,11 @@
+versionPage = fs.open("Trains/version", "r")
+version = tonumber(versionPage.readLine())
+upVersion = http.get("https://raw.github.com/Greeniac916/Trains/master/version").readAll())
+versionPage.close
+if version < upVersion then
+  updateF = io.open("startup","w")
+  file:write("shell.run('updater')")
+  file:close
+  os.reboot()
+end
+  
