@@ -6,5 +6,5 @@ function download(where, url)
   file:close()
 end
 
-print("Hello World!")
+print("Hello World! 2")
 
