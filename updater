@@ -1,7 +1,7 @@
 function download(where, url)
   print("Downloading files")
   stuff = http.get(url).readAll()
-  file = io.open(path,"w")
+  file = io.open(where,"w")
   file:write(stuff)
   file:close()
 end
