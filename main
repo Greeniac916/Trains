@@ -1,0 +1,43 @@
+m = peripheral.wrap("bottom")
+dests = {"overworld/Green","overworld/Red"}
+
+while true do
+  term.clear()
+  term.setCursorPos(1,1)
+  print("Destinations")
+  print(" ")
+    for k,v in pairs(dests) do
+      print("["..k.."] "..v)
+    end
+  if term.isColor() then
+    print("Please Click Destination...")
+    event,p1,p2,p3 = os.pullEvent("mouse_click")
+    click = p3 - 2
+    if click > 0 then
+	if click <= table.maxn(dests) then
+      place = dests[click]
+      print("Printing Tickets For: ".. place)
+      sleep(1)
+      if pcall(m.createTicket, place) then
+        print("Ticket Printed!")
+	  end
+	else
+	  print("I think you misclicked!")
+    end
+	end
+  else
+    write("Enter number>")
+    input = read()
+    place = dests[tonumber(input)]
+    if place == nil then
+      print("Number Not Valid!")
+    else
+      print("Printing Ticket To: "..place)
+      sleep(1)
+      if pcall(m.createTicket, place) then
+        print("Ticket Printed!")
+      end
+      sleep(2)
+    end
+  end	
+end
