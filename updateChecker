@@ -11,3 +11,12 @@ if version < upVersion then
   os.reboot()
 end
   
+versionPage = fs.open("/void/version", "r")
+version = tonumber(versionFile.readLine())
+upVersion = tonumber(http.get("https://raw.github.com/Greeniac916/Trains/master/version").readAll())
+versionPage.close()
+if(upVersion > version)then
+	return true
+end
+return false
+
