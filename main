@@ -16,6 +16,7 @@ while true do
     if click > 0 then
 	if click <= table.maxn(dests) then
       place = dests[click]
+      shell.run("Trains/updateChecker")
       print("Printing Tickets For: ".. place)
       sleep(1)
       if pcall(m.createTicket, place) then
@@ -32,6 +33,7 @@ while true do
     if place == nil then
       print("Number Not Valid!")
     else
+      shell.run("Trains/updateChecker")	
       print("Printing Ticket To: "..place)
       sleep(1)
       if pcall(m.createTicket, place) then
@@ -40,5 +42,4 @@ while true do
       sleep(2)
     end
   end
-  shell.run("Trains/updateChecker")
 end
