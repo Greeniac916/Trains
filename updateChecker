@@ -1,16 +1,3 @@
-versionPage = fs.open("Trains/version", "r")
-version = tonumber(versionPage.readLine())
-upVersionPage = http.get("https://raw.github.com/Greeniac916/Trains/master/version")
-upVersion = tonumber(upVersionPage.readAll())
-versionPage.close
-if version < upVersion then
-  print("Update Found... Updating")
-  updateF = io.open("startup","w")
-  file:write("shell.run('updater')")
-  file:close
-  os.reboot()
-end
-  
 versionPage = fs.open("/void/version", "r")
 version = tonumber(versionFile.readLine())
 upVersion = tonumber(http.get("https://raw.github.com/Greeniac916/Trains/master/version").readAll())
