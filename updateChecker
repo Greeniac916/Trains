@@ -5,7 +5,7 @@ versionPage.close()
 if(upVersion > version)then
   print("Sorry, there is an update. Please reselect your desination when updated!")
   file = assert(io.open("/startup", "w"))
-		file:write("shell.run('updater')")
+		file:write("shell.run('Trains/updater')")
 		file:close()
 	os.reboot()
   return true
