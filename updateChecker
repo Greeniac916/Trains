@@ -1,4 +1,4 @@
-versionPage = fs.open("/void/version", "r")
+versionPage = fs.open("/Trains/version", "r")
 version = tonumber(versionPage.readLine())
 upVersion = tonumber(http.get("https://raw.github.com/Greeniac916/Trains/master/version").readAll())
 versionPage.close()
