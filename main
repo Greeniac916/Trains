@@ -1,4 +1,4 @@
-m = peripheral.wrap("bottom")
+m = peripheral.wrap("top")
 dests = {"overworld/Green","overworld/Red"}
 
 while true do
