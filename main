@@ -4,6 +4,7 @@ dests = {"overworld/Green","overworld/Red"}
 while true do
   term.clear()
   term.setCursorPos(1,1)
+  shell.run("Trains/updateChecker")
   print("Destinations")
   print(" ")
     for k,v in pairs(dests) do
