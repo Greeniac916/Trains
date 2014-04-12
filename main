@@ -1,5 +1,5 @@
 m = peripheral.wrap("top")
-dests = {"overworld/Green","overworld/Red", overworld/ThePollyMan}
+dests = {"overworld/Green","overworld/Red", "overworld/ThePollyMan"}
 
 while true do
   term.clear()
