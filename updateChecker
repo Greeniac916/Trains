@@ -1,6 +1,6 @@
 versionPage = fs.open("Trains/version", "r")
 version = tonumber(versionPage.readLine())
-upVersion = http.get("https://raw.github.com/Greeniac916/Trains/master/version").readAll())
+upVersion = tonumber(http.get("https://raw.github.com/Greeniac916/Trains/master/version").readAll())
 versionPage.close
 if version < upVersion then
   print("Update Found... Updating")
