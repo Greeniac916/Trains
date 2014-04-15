@@ -16,7 +16,7 @@ while true do
     print(" Toot! Toot!  hehe... toot")
   end
   if rand == 4 then
-    print(" The permiter of a circle is... nevermind.")
+    print(" Why would you read this?")
   end
   if rand == 5 then
     print(" Green sucks at splashes!... :D")
