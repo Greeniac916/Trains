@@ -1,5 +1,6 @@
 m = peripheral.wrap("top")
 dests = {"Overworld/Green","Overworld/Red", "Overworld/ThePollyMan"}
+v = tonumber(fs.open("/Trains/version", "r").readLine())
 
 while true do
   term.clear()
@@ -21,7 +22,7 @@ while true do
   if rand == 5 then
     print(" Green sucks at splashes!... :D")
   end
-  print(" ")
+  print(" Version: "..v)
     for k,v in pairs(dests) do
       print("["..k.."] "..v)
     end
