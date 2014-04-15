@@ -7,19 +7,19 @@ while true do
   write("Destinations:")
   rand = math.random(1,5)
   if rand == 1 then
-    print("Dont play on tracks!")
+    print(" Dont play on tracks!")
   end
   if rand == 2 then
-    print("Dont throw eggs at trains!")
+    print(" Dont throw eggs at trains!")
   end
   if rand == 3 then
-    print("Toot! Toot!  hehe... toot")
+    print(" Toot! Toot!  hehe... toot")
   end
   if rand == 4 then
-    print("The permiter of a circle is... wait there are no circles")
+    print(" The permiter of a circle is... nevermind.")
   end
   if rand == 5 then
-    print("Green sucks at splashes!... and being funny...")
+    print(" Green sucks at splashes!... :D")
   end
   print(" ")
     for k,v in pairs(dests) do
