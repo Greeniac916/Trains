@@ -7,7 +7,7 @@ while true do
   write("Destinations:")
   rand = math.random(1,5)
   if rand == 1 then
-    print(" Dont play on tracks!")
+    print(" Do play on the tracks!")
   end
   if rand == 2 then
     print(" Dont throw eggs at trains!")
@@ -16,7 +16,7 @@ while true do
     print(" Toot! Toot!  hehe... toot")
   end
   if rand == 4 then
-    print(" Why would you read this?")
+    print(" Smugging Mexicans since 2014")
   end
   if rand == 5 then
     print(" Green sucks at splashes!... :D")
