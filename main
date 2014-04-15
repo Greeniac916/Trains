@@ -16,7 +16,7 @@ while true do
     print(" Toot! Toot!  hehe... toot")
   end
   if rand == 4 then
-    print(" Smugging Mexicans since 2014")
+    print(" 01123581321345589")
   end
   if rand == 5 then
     print(" Green sucks at splashes!... :D")
