@@ -5,7 +5,7 @@ while true do
   term.clear()
   term.setCursorPos(1,1)
   print("Destinations:")
-  print(" ")
+  print("[0] Update?")
     for k,v in pairs(dests) do
       print("["..k.."] "..v)
     end
@@ -14,21 +14,28 @@ while true do
     event,p1,p2,p3 = os.pullEvent("mouse_click")
     click = p3 - 2
     if click > 0 then
-	if click <= table.maxn(dests) then
-      place = dests[click]
-      shell.run("Trains/updateChecker")
-      print("Printing Tickets For: ".. place)
-      sleep(1)
-      if pcall(m.createTicket, place) then
-        print("Ticket Printed!")
-	  end
-	else
-	  print("I think you misclicked!")
-    end
+      if click <= table.maxn(dests) then
+        place = dests[click]
+        shell.run("Trains/updateChecker")
+        print("Printing Tickets For: ".. place)
+        sleep(1)
+        if pcall(m.createTicket, place) then
+          print("Ticket Printed!")
 	end
+      else
+	print("I think you misclicked!")
+      end
+    else if click == -1 then
+      print("Checking for an update...")
+      shell.run("Trains/updateChecker")
+    end
   else
     write("Enter number>")
     input = read()
+    if input == 0 or input == "Update" then
+      print("Checking for an update...")
+      shell.run("Trains/updateChecker")
+    else
     place = dests[tonumber(input)]
     if place == nil then
       print("Number Not Valid!")
@@ -38,6 +45,7 @@ while true do
       sleep(1)
       if pcall(m.createTicket, place) then
         print("Ticket Printed!")
+      end
       end
       sleep(2)
     end
