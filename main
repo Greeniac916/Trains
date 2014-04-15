@@ -4,7 +4,7 @@ dests = {"Overworld/Green","Overworld/Red", "Overworld/ThePollyMan"}
 while true do
   term.clear()
   term.setCursorPos(1,1)
-  print("Destinations")
+  print("Destinations:")
   print(" ")
     for k,v in pairs(dests) do
       print("["..k.."] "..v)
