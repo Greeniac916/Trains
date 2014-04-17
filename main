@@ -1,5 +1,5 @@
 m = peripheral.wrap("top")
-dests = {"Overworld/Green","Overworld/Red", "Overworld/ThePollyMan"}
+dests = {"Overworld/Green","Overworld/Red", "Overworld/ThePollyMan", "Overworld/Dest"}
 v = tonumber(fs.open("/Trains/version", "r").readLine())
 
 while true do
